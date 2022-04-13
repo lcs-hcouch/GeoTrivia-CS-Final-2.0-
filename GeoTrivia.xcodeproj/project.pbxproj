@@ -13,6 +13,20 @@
 		04DC9D4828065DFA0073E100 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC9D3628065DF50073E100 /* ContentView.swift */; };
 		04DC9D4928065DFA0073E100 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DC9D3728065DFA0073E100 /* Assets.xcassets */; };
 		04DC9D4A28065DFA0073E100 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DC9D3728065DFA0073E100 /* Assets.xcassets */; };
+		04DC9D5428065E160073E100 /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC9D5328065E160073E100 /* Design.swift */; };
+		04DC9D5528065E160073E100 /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC9D5328065E160073E100 /* Design.swift */; };
+		04DC9D5A28065E3D0073E100 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC9D5928065E3D0073E100 /* Answer.swift */; };
+		04DC9D5B28065E3D0073E100 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC9D5928065E3D0073E100 /* Answer.swift */; };
+		04DC9D5D28065E480073E100 /* Guess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC9D5C28065E480073E100 /* Guess.swift */; };
+		04DC9D5E28065E480073E100 /* Guess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC9D5C28065E480073E100 /* Guess.swift */; };
+		04DC9D6028065E5E0073E100 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC9D5F28065E5E0073E100 /* PrimaryButton.swift */; };
+		04DC9D6128065E5E0073E100 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC9D5F28065E5E0073E100 /* PrimaryButton.swift */; };
+		04DC9D6328065E6E0073E100 /* AnswerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC9D6228065E6E0073E100 /* AnswerRow.swift */; };
+		04DC9D6428065E6E0073E100 /* AnswerRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC9D6228065E6E0073E100 /* AnswerRow.swift */; };
+		04DC9D6628065E990073E100 /* GuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC9D6528065E990073E100 /* GuessView.swift */; };
+		04DC9D6728065E990073E100 /* GuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC9D6528065E990073E100 /* GuessView.swift */; };
+		04DC9D6928065EA90073E100 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC9D6828065EA90073E100 /* GameView.swift */; };
+		04DC9D6A28065EA90073E100 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC9D6828065EA90073E100 /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +36,13 @@
 		04DC9D3C28065DFA0073E100 /* GeoTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DC9D4228065DFA0073E100 /* GeoTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04DC9D4428065DFA0073E100 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		04DC9D5328065E160073E100 /* Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
+		04DC9D5928065E3D0073E100 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		04DC9D5C28065E480073E100 /* Guess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guess.swift; sourceTree = "<group>"; };
+		04DC9D5F28065E5E0073E100 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		04DC9D6228065E6E0073E100 /* AnswerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerRow.swift; sourceTree = "<group>"; };
+		04DC9D6528065E990073E100 /* GuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessView.swift; sourceTree = "<group>"; };
+		04DC9D6828065EA90073E100 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				04DC9D3428065DF50073E100 /* Shared */,
+				04DC9D5328065E160073E100 /* Design.swift */,
+				04DC9D3728065DFA0073E100 /* Assets.xcassets */,
 				04DC9D4328065DFA0073E100 /* macOS */,
 				04DC9D3D28065DFA0073E100 /* Products */,
 			);
@@ -55,8 +78,9 @@
 			isa = PBXGroup;
 			children = (
 				04DC9D3528065DF50073E100 /* GeoTriviaApp.swift */,
-				04DC9D3628065DF50073E100 /* ContentView.swift */,
-				04DC9D3728065DFA0073E100 /* Assets.xcassets */,
+				04DC9D5828065E2B0073E100 /* Models */,
+				04DC9D5728065E230073E100 /* Parts */,
+				04DC9D5628065E1D0073E100 /* Views */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -76,6 +100,34 @@
 				04DC9D4428065DFA0073E100 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		04DC9D5628065E1D0073E100 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04DC9D3628065DF50073E100 /* ContentView.swift */,
+				04DC9D6528065E990073E100 /* GuessView.swift */,
+				04DC9D6828065EA90073E100 /* GameView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04DC9D5728065E230073E100 /* Parts */ = {
+			isa = PBXGroup;
+			children = (
+				04DC9D5F28065E5E0073E100 /* PrimaryButton.swift */,
+				04DC9D6228065E6E0073E100 /* AnswerRow.swift */,
+			);
+			path = Parts;
+			sourceTree = "<group>";
+		};
+		04DC9D5828065E2B0073E100 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04DC9D5928065E3D0073E100 /* Answer.swift */,
+				04DC9D5C28065E480073E100 /* Guess.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,8 +228,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DC9D6028065E5E0073E100 /* PrimaryButton.swift in Sources */,
+				04DC9D5428065E160073E100 /* Design.swift in Sources */,
 				04DC9D4728065DFA0073E100 /* ContentView.swift in Sources */,
 				04DC9D4528065DFA0073E100 /* GeoTriviaApp.swift in Sources */,
+				04DC9D6928065EA90073E100 /* GameView.swift in Sources */,
+				04DC9D6628065E990073E100 /* GuessView.swift in Sources */,
+				04DC9D6328065E6E0073E100 /* AnswerRow.swift in Sources */,
+				04DC9D5A28065E3D0073E100 /* Answer.swift in Sources */,
+				04DC9D5D28065E480073E100 /* Guess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +244,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04DC9D6128065E5E0073E100 /* PrimaryButton.swift in Sources */,
+				04DC9D5528065E160073E100 /* Design.swift in Sources */,
 				04DC9D4828065DFA0073E100 /* ContentView.swift in Sources */,
 				04DC9D4628065DFA0073E100 /* GeoTriviaApp.swift in Sources */,
+				04DC9D6A28065EA90073E100 /* GameView.swift in Sources */,
+				04DC9D6728065E990073E100 /* GuessView.swift in Sources */,
+				04DC9D6428065E6E0073E100 /* AnswerRow.swift in Sources */,
+				04DC9D5B28065E3D0073E100 /* Answer.swift in Sources */,
+				04DC9D5E28065E480073E100 /* Guess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

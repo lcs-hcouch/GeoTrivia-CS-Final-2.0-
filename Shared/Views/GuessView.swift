@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct GuessView: View {
+    @EnvironmentObject var guessManager: GuessManager
+    
     var body: some View {
         VStack(spacing: 40) {
             HStack {
@@ -16,24 +18,30 @@ struct GuessView: View {
                 
                 Spacer()
                 
-                Text("1 out of 10")
+                Text("\(guessManager.index + 1)out of \(guessManager.length)")
                     .foregroundColor(Color("AccentColor"))
                     .fontWeight(.heavy)
             }
             VStack(alignment: .leading, spacing: 20) {
-                Text("What European country is not a part of the EU?")
+                Text(guessManager.question)
                     .font(.system(size: 20))
                     .bold()
                     .foregroundColor((Color("AccentColor")))
                     .padding()
                 
-                AnswerRow(answer: Answer(text: "Norway", isCorrect: true))
-                AnswerRow(answer: Answer(text: "Lithuania", isCorrect: false))
-                AnswerRow(answer: Answer(text: "Ireland", isCorrect: false))
-                AnswerRow(answer: Answer(text: "Czechia", isCorrect: false))
+                ForEach(guessManager.answerChoices, id: \.id) { answer in
+                    AnswerRow(answer: answer)
+                        .environmentObject(guessManager)
+                }
             }
             
-            PrimaryButton(text: "Continue!")
+            Button {
+                guessManager.nextQuestion()
+            } label: {
+                PrimaryButton(text: "Continue!", background: guessManager.answerSelected ? Color("AccentColor") : Color(hue: 1.0, saturation: 0.0, brightness: 0.564, opacity:0.327))
+            }
+            .disabled(!guessManager.answerSelected)
+            
             
             Spacer()
             
@@ -48,5 +56,6 @@ struct GuessView: View {
 struct GuessView_Previews: PreviewProvider {
     static var previews: some View {
         GuessView()
+            .environmentObject(GuessManager())
     }
 }

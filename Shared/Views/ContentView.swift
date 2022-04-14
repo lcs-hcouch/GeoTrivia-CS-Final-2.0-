@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var guessManager = GuessManager()
     var body: some View {
         NavigationView {
             VStack(spacing: 40) {
@@ -22,6 +23,7 @@ struct ContentView: View {
                 
                 NavigationLink {
                     GuessView()
+                        .environmentObject(guessManager)
                 } label: {
                     PrimaryButton(text: "Start!")
                 }

@@ -27,6 +27,8 @@
 		04DC9D6728065E990073E100 /* GuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC9D6528065E990073E100 /* GuessView.swift */; };
 		04DC9D6928065EA90073E100 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC9D6828065EA90073E100 /* GameView.swift */; };
 		04DC9D6A28065EA90073E100 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC9D6828065EA90073E100 /* GameView.swift */; };
+		04DC9D6C280670260073E100 /* GuessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC9D6B280670260073E100 /* GuessManager.swift */; };
+		04DC9D6D280670260073E100 /* GuessManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DC9D6B280670260073E100 /* GuessManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,7 @@
 		04DC9D6228065E6E0073E100 /* AnswerRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerRow.swift; sourceTree = "<group>"; };
 		04DC9D6528065E990073E100 /* GuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessView.swift; sourceTree = "<group>"; };
 		04DC9D6828065EA90073E100 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		04DC9D6B280670260073E100 /* GuessManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 				04DC9D5828065E2B0073E100 /* Models */,
 				04DC9D5728065E230073E100 /* Parts */,
 				04DC9D5628065E1D0073E100 /* Views */,
+				04DC9D6B280670260073E100 /* GuessManager.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -229,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DC9D6028065E5E0073E100 /* PrimaryButton.swift in Sources */,
+				04DC9D6C280670260073E100 /* GuessManager.swift in Sources */,
 				04DC9D5428065E160073E100 /* Design.swift in Sources */,
 				04DC9D4728065DFA0073E100 /* ContentView.swift in Sources */,
 				04DC9D4528065DFA0073E100 /* GeoTriviaApp.swift in Sources */,
@@ -245,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04DC9D6128065E5E0073E100 /* PrimaryButton.swift in Sources */,
+				04DC9D6D280670260073E100 /* GuessManager.swift in Sources */,
 				04DC9D5528065E160073E100 /* Design.swift in Sources */,
 				04DC9D4828065DFA0073E100 /* ContentView.swift in Sources */,
 				04DC9D4628065DFA0073E100 /* GeoTriviaApp.swift in Sources */,
